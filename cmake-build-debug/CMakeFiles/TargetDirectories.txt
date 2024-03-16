@@ -1,0 +1,3 @@
+X:/Projects/C++/ACM/cmake-build-debug/CMakeFiles/ACM.dir
+X:/Projects/C++/ACM/cmake-build-debug/CMakeFiles/edit_cache.dir
+X:/Projects/C++/ACM/cmake-build-debug/CMakeFiles/rebuild_cache.dir
