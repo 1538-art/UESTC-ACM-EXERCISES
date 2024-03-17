@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 17)
 add_executable(ACM
         #Exercise1/A.cpp
         #Exercise1/B.cpp
-        Exercise1/C.cpp
+        #Exercise1/C.cpp
         #Exercise1/D.cpp
         #Exercise1/E.cpp
         #Exercise1/F.cpp
@@ -14,6 +14,10 @@ add_executable(ACM
         #Exercise1/H.cpp
         #Exercise1/I.cpp
         #Exercise1/J.cpp
+        #Exercise2/A.cpp
+        #Exercise2/B.cpp
+        #Exercise2/C.cpp
+        Exercise2/D.cpp
         #main.cpp
 
 )
