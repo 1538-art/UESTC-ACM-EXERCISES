@@ -27,37 +27,39 @@ Yes
 No
  */
 #include <iostream>
-#include <vector>
-#include <string>
+#include <cstdio>
+#include <algorithm>
+#include <cstring>
+
 using namespace std;
-bool canResort(const string& a, const string& b) {
-  vector<int> count(10, 0);
-  for (char c : a) {
-    count[c - '0']++;
-  }
-  for (char c : b) {
-    count[c - '0']--;
-  }
-  for (int i : count) {
-    if (i != 0) {
-      return false;
-    }
-  }
-  return true;
+
+
+bool cmp(char a, char b) {
+  
+  return a > b;
+  
 }
 
 int main() {
-  int T;
+  int T, a_size, b_size, i;
   cin >> T;
-  while (T-- > 0) {
-    string a, b;
+  while (T--) {
+    char a[101] = {0}, b[101] = {0};
     cin >> a >> b;
-
-    if (canResort(a, b)) {
-      cout << "Yes" << endl;
-    } else {
-      cout << "No" << endl;
+    a_size = static_cast<int>(strlen(a));
+    b_size = static_cast<int>(strlen(b));
+    sort(a, a + a_size, cmp);
+    sort(b, b + b_size, cmp);
+    if (a_size < b_size) {
+      for (i = 0; i < b_size - a_size; i++)
+        a[a_size + i] = '0';
+    } else if (a_size > b_size) {
+      for (i = 0; i < a_size - b_size; i++)
+        b[b_size + i] = '0';
     }
+    if (strcmp(a, b) != 0)
+      printf("No\n");
+    else printf("Yes\n");
   }
   return 0;
 }
