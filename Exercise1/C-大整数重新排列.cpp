@@ -27,17 +27,13 @@ Yes
 No
  */
 #include <iostream>
-#include <cstdio>
 #include <algorithm>
 #include <cstring>
 
 using namespace std;
 
-
 bool cmp(char a, char b) {
-  
   return a > b;
-  
 }
 
 int main() {
@@ -58,8 +54,8 @@ int main() {
         b[b_size + i] = '0';
     }
     if (strcmp(a, b) != 0)
-      printf("No\n");
-    else printf("Yes\n");
+      cout << "No" << endl;
+    else cout << "Yes" << endl;
   }
   return 0;
 }

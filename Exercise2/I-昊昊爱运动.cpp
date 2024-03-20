@@ -50,10 +50,11 @@ Output
 #include <cstdio>
 #include <algorithm>
 #include <cmath>
+
 using namespace std;
 
 const int MAXN = 2005;
-const int MAXQ = 1e6+5;
+const int MAXQ = 1e6 + 5;
 const int MAXM = 105;
 
 struct Query {
@@ -64,35 +65,35 @@ int n, m, Q, a[MAXN], ans[MAXQ], cnt[MAXM], res;
 
 bool cmp(const Query &x, const Query &y) {
   int bx = x.l / sqrt(n), by = y.l / sqrt(n);
-  if(bx != by) return bx < by;
+  if (bx != by) return bx < by;
   return bx & 1 ? x.r < y.r : x.r > y.r;
 }
 
 void add(int x) {
-  if(++cnt[a[x]] == 1) ++res;
+  if (++cnt[a[x]] == 1) ++res;
 }
 
 void del(int x) {
-  if(--cnt[a[x]] == 0) --res;
+  if (--cnt[a[x]] == 0) --res;
 }
 
 int main() {
   scanf("%d%d", &n, &m);
-  for(int i = 1; i <= n; ++i) scanf("%d", &a[i]);
+  for (int i = 1; i <= n; ++i) scanf("%d", &a[i]);
   scanf("%d", &Q);
-  for(int i = 1; i <= Q; ++i) {
+  for (int i = 1; i <= Q; ++i) {
     scanf("%d%d", &q[i].l, &q[i].r);
     q[i].id = i;
   }
   sort(q + 1, q + Q + 1, cmp);
-  for(int i = 1, l = 1, r = 0; i <= Q; ++i) {
-    while(l < q[i].l) del(l++);
-    while(l > q[i].l) add(--l);
-    while(r < q[i].r) add(++r);
-    while(r > q[i].r) del(r--);
+  for (int i = 1, l = 1, r = 0; i <= Q; ++i) {
+    while (l < q[i].l) del(l++);
+    while (l > q[i].l) add(--l);
+    while (r < q[i].r) add(++r);
+    while (r > q[i].r) del(r--);
     ans[q[i].id] = res;
   }
-  for(int i = 1; i <= Q; ++i) printf("%d\n", ans[i]);
+  for (int i = 1; i <= Q; ++i) printf("%d\n", ans[i]);
   return 0;
 }
 

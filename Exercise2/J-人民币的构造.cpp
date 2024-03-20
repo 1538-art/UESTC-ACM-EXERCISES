@@ -20,15 +20,24 @@ Input	Output
 10      3
  */
 #include <iostream>
+
 using namespace std;
 
-int main(){
+int main() {
   int n, tol = 1, i = 1;
   cin >> n;
-  while(n>tol){
-    tol=3*tol+1;
+  while (n > tol) {
+    //当1-n都可以被表示时，再加一个数2n+1，则，
+    // 从n+1到2n都可以用2n+1减去1-n中的某个数获得，2n+2到3n+1同理
+    tol = 3 * tol + 1;
     i++;
   }
-  cout<<i<<endl;
+  cout << i << endl;
   return 0;
 }
+/*
+ * 1,1:1
+ * 2,4:1,3
+ * 3,13:1,3,9
+ * 4,40:1,3,9,27
+ */
