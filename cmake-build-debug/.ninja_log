@@ -1,16 +1,21 @@
 # ninja log v5
-0	342	7322642452595436	CMakeFiles/ACM.dir/Exercise1/C.cpp.obj	1d2518133502311a
-0	128	7323852238693804	build.ninja	77c34ef9d894c6a
-319	400	7323824615502173	ACM.exe	9c21d9aed6ffbf84
+0	124	7326457791350024	build.ninja	77c34ef9d894c6a
+2	344	7324667326905145	CMakeFiles/ACM.dir/Exercise1/C.cpp.obj	1d2518133502311a
 0	274	7321178856154452	CMakeFiles/ACM.dir/Exercise1/D.cpp.obj	108255503fb2f9ca
 4	525	7320825057352850	CMakeFiles/ACM.dir/Exercise1/A.cpp.obj	7de8ed34b87f3204
+918	996	7325290474407188	ACM.exe	ae88921dcbd0e4f8
 20	595	7320825058060637	CMakeFiles/ACM.dir/Exercise1/B.cpp.obj	a79b467e5ea9b90e
 2	240	7322109725028772	CMakeFiles/ACM.dir/Exercise1/F.cpp.obj	fbe6eb2d1552f53e
-2	237	7322131022352038	CMakeFiles/ACM.dir/Exercise1/G.cpp.obj	c1797e5e8db24ee5
 3	318	7323824614734303	CMakeFiles/ACM.dir/Exercise2/D.cpp.obj	f6d45b3ce5ac10fe
+2	237	7322131022352038	CMakeFiles/ACM.dir/Exercise1/G.cpp.obj	c1797e5e8db24ee5
 2	357	7322621589222212	CMakeFiles/ACM.dir/Exercise1/H.cpp.obj	6da66abd7f18a209
 1	409	7322632684172730	CMakeFiles/ACM.dir/Exercise1/I.cpp.obj	e093b4167eb27233
+3	294	7325482985319645	CMakeFiles/ACM.dir/Exercise2/J-人民币构造.cpp.obj	16485e8131040369
 1	342	7322639608329612	CMakeFiles/ACM.dir/Exercise1/J.cpp.obj	263b86140d755f9c
 1	253	7323033040008830	CMakeFiles/ACM.dir/Exercise2/A.cpp.obj	3577704092be075f
-2	338	7323811889549864	CMakeFiles/ACM.dir/Exercise2/B.cpp.obj	eee91f9b493a0235
 2	256	7323465578871519	CMakeFiles/ACM.dir/Exercise2/C.cpp.obj	e4b3c1e5f1263aae
+2	338	7323811889549864	CMakeFiles/ACM.dir/Exercise2/B.cpp.obj	eee91f9b493a0235
+2	245	7324364180598976	CMakeFiles/ACM.dir/Exercise2/E.cpp.obj	a4f4f3cd114ba0d7
+2	1169	7324421140430613	CMakeFiles/ACM.dir/Exercise2/G-P酱野外冒险.cpp.obj	c316b14d7c726a4
+12	262	7324731919958566	CMakeFiles/ACM.dir/Exercise2/H-E国修铁路.cpp.obj	d31d8139249c4309
+12	241	7325482984799797	CMakeFiles/ACM.dir/Exercise2/I-昊昊喜欢运动.cpp.obj	e1cd2eb60364d838

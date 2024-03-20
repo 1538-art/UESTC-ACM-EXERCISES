@@ -49,8 +49,8 @@ cmake_ninja_workdir = X$:/Projects/C++/ACM/cmake-build-debug/
 
 build cmake_object_order_depends_target_ACM: phony || CMakeFiles/ACM.dir
 
-build CMakeFiles/ACM.dir/Exercise2/D.cpp.obj: CXX_COMPILER__ACM_unscanned_Debug X$:/Projects/C++/ACM/Exercise2/D.cpp || cmake_object_order_depends_target_ACM
-  DEP_FILE = CMakeFiles\ACM.dir\Exercise2\D.cpp.obj.d
+build CMakeFiles/ACM.dir/Exercise2/N-点球大战(penalty).cpp.obj: CXX_COMPILER__ACM_unscanned_Debug X$:/Projects/C++/ACM/Exercise2/N-点球大战(penalty).cpp || cmake_object_order_depends_target_ACM
+  DEP_FILE = CMakeFiles\ACM.dir\Exercise2\N-点球大战(penalty).cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ACM.dir
   OBJECT_FILE_DIR = CMakeFiles\ACM.dir\Exercise2
@@ -63,7 +63,7 @@ build CMakeFiles/ACM.dir/Exercise2/D.cpp.obj: CXX_COMPILER__ACM_unscanned_Debug 
 #############################################
 # Link the executable ACM.exe
 
-build ACM.exe: CXX_EXECUTABLE_LINKER__ACM_Debug CMakeFiles/ACM.dir/Exercise2/D.cpp.obj
+build ACM.exe: CXX_EXECUTABLE_LINKER__ACM_Debug CMakeFiles/ACM.dir/Exercise2/N-点球大战(penalty).cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\ACM.dir
