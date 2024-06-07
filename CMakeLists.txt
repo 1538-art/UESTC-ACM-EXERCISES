@@ -28,5 +28,11 @@ add_executable(ACM
         #Exercise2/K-倒推数组.cpp
         #Exercise2/L-矩阵.cpp
         #Exercise2/M-FlyThrough.cpp
-        "Exercise2/N-点球大战(penalty).cpp"
+        #"Exercise2/N-点球大战(penalty).cpp"
+        #Contest/A.cpp
+        #Contest/B.cpp
+        Contest/D.cpp
+        #Contest/I.cpp
+        #Contest/P.cpp
+
 )

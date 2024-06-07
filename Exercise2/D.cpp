@@ -16,6 +16,43 @@ Input
 Output
 2
  */
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int count_situations(int N, int M, int current, vector<vector<int>>& memo) {
+    if (M == 0) {
+        if (current == 0) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
+
+    if (memo[M][current] != -1) {
+        return memo[M][current];
+    }
+
+    int total = 0;
+    for (int i = 0; i < N; i++) {
+        if (i != current) {
+            total += count_situations(N, M - 1, i, memo);
+        }
+    }
+    memo[M][current] = total;
+    return total;
+}
+
+int main() {
+    int N, M;
+    cin >> N >> M;
+    vector<vector<int>> memo(M + 1, vector<int>(N, -1));
+    cout << count_situations(N, M, 0, memo) << endl;
+    return 0;
+}
+
+/*
 #include <vector>
 #include <iostream>
 
@@ -44,6 +81,7 @@ int main() {
   cout << count_situations(N, M) << endl;
   return 0;
 }
+*/
 /*
 #include<bits/stdc++.h>
 using namespace std;
@@ -55,3 +93,4 @@ int main() {
   return 0;
 }
 */
+

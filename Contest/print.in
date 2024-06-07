@@ -1,0 +1,4 @@
+3
+memory: use peak in `max_usage_in_bytes`
+Kernel 5.19 introduces `memory.peak` and kernel 6.5 introduces `memory.swap.peak` to expose the memory and swap usage watermark. This change use these values to fill `max_usage_in_bytes`.
+Add `swapOnlyUsage` in `MemoryStats`. This field reports swap-only usage. For cgroupv1, `Usage` and `Failcnt` are set by subtracting memory usage from memory+swap usage. For cgroupv2, `Usage`, `Limit`, and `MaxUsage` are set. (#4010)
